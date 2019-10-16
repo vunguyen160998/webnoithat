@@ -10,7 +10,12 @@ var UserSchema=new Schema({
     timeRegister:Date,
     active:Boolean
 })
+UserSchema.methods.test=function(name){
+    console.log("ok")
+    return true;
+}
 UserSchema.pre('save',(next)=>{
     next();
 })
+
 module.exports=mongoose.model("User",UserSchema)

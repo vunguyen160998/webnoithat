@@ -1,6 +1,9 @@
 var express = require('express')
 var router = express.Router()
 
+/**
+ *  GENERIC API
+ **/ 
 
 router.get("/:list/get",(req,res)=>{
     let list=req.params.list;
@@ -20,4 +23,23 @@ router.post("/:list/create",(req,res)=>{
             res.send(result)
     })
 })
+
+router.post("/:list/update",(req,res)=>{
+    let list=req.params.list;
+    let filter=req.body.filter
+    let update=req.body.update
+    db[list].findOne(filter,(err,data)=>{
+        data.set(update)
+        data.save((err,data)=>{
+            if(err)
+                res.send("err")
+            else{
+                res.send(data)
+            }
+        })
+    })
+})
+
+   
+
 module.exports =router
