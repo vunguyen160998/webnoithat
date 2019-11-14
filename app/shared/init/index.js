@@ -1,7 +1,5 @@
 
-let  Init={
-    initGlobal:require("./initGlobal")
-}
+let  Init=require("require-all")(__dirname)
 
 
 module.exports= Init

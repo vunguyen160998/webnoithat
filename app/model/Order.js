@@ -1,13 +1,13 @@
 let mongoose=require('mongoose');
 let Schema=mongoose.Schema;
 
-var BillSchema=new Schema({
+var OrderSchema=new Schema({
     user:{type:Schema.Types.ObjectId,ref:'User'},
-    product:{type:Schema.Types.ObjectId,ref:'Product'},
+    address:String,
     total:Number,
     note:String
 })
-BillSchema.pre('save',(next)=>{
+OrderSchema.pre('save',(next)=>{
     next();
 })
-module.exports=mongoose.model("Bill",BillSchema)
+module.exports=mongoose.model("Order",OrderSchema)
