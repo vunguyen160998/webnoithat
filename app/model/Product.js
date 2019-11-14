@@ -14,6 +14,7 @@ var ProductSchema=new Schema({
         madeIn:String,
         color:String
     },
+    thumbnail:String,
     picture:[String]
 })
 ProductSchema.pre('save',(next)=>{
