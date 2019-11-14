@@ -3,7 +3,7 @@
 /** get all order
  *  get /order/list
  */
-exports.getAllOrder=await function(req,res){
+exports.getAllOrder=async function(req,res){
     let skip=req.query.skip
     let limit=req.query.limit
     // count all product
