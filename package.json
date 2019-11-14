@@ -15,6 +15,9 @@
   "bugs": {
     "url": "https://github.com/vunguyen160998/webnoithat/issues"
   },
+  "engines":{
+    "node":"10.15.1"
+  },
   "homepage": "https://github.com/vunguyen160998/webnoithat#readme",
   "dependencies": {
     "async": "^3.1.0",
