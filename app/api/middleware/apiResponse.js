@@ -16,7 +16,7 @@ module.exports=function (req,res,next){
     res.success=function(data,pagination){
         res.json({
             code:200,
-            result:data,
+            results:data,
             ...pagination
         })
     }

@@ -21,9 +21,9 @@ morgan("dev")
 router.get("/:list/get",(req,res)=>{
     let list=req.params.list;
     db[list].find({},(err,data)=>{
-        if(err) res.send("error")
+        if(err) res.error("error")
         else
-            res.send(data)
+            res.success(data)
     })
 })
 
@@ -31,9 +31,9 @@ router.post("/:list/create",(req,res)=>{
     let list=req.params.list;
     let data=req.body
     db[list].create(data,(err,result)=>{
-        if(err) res.send(err)
+        if(err) res.error(err)
         else
-            res.send(result)
+            res.success(result)
     })
 })
 
@@ -45,9 +45,9 @@ router.post("/:list/update",(req,res)=>{
         data.set(update)
         data.save((err,data)=>{
             if(err)
-                res.send(err)
+                res.error(err)
             else{
-                res.send(data)
+                res.success(data)
             }
         })
     })
@@ -62,4 +62,9 @@ router.get("/product/list",controllers.product.getAllProduct)
 router.get("/order/list",controllers.order.getAllOrder)
 
 router.get("/order/:id/detail",controllers.order.detail)
+
+router.get("/user/:id/get",controllers.user.getById)
+router.get("/user/list",controllers.user.getAllUser)
+router.post("/user/create",controllers.user.create)
+router.post("/user/:id/update",controllers.user.update)
 module.exports =router

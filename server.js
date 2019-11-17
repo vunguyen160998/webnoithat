@@ -24,10 +24,10 @@ app.use(express.static(dir))
 app.use("/api",router)
 
 //  db.User.create({
-//     "username":"vunguyen",
+//     "username":"trongtran",
 //     "password":"123456",
-//     "name":"Nguyen Van Vu",
-//     "email":"hoangtunvv@gmail.com",
+//     "name":"Tran Ngoc Trong",
+//     "email":"trong.tn178@gmail.com",
 //     "phone":"84389814400",
 //     "active":true
 // },(err,data)=>{

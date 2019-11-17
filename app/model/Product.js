@@ -15,7 +15,7 @@ var ProductSchema=new Schema({
         color:String
     },
     thumbnail:String,
-    picture:[String]
+    images:[String]
 })
 ProductSchema.pre('save',(next)=>{
     next();
