@@ -2,6 +2,7 @@ let express=require('express');
 
 let app=express();
 let PORT=process.env.PORT || 3000 
+let path=require("path")
 let mongoose=require("mongoose");
 let router=require("./app/api/router")
 let init=require("./app/shared/init");
@@ -17,23 +18,25 @@ init.initGlobal({
 })
 
 //-------------------------
+var dir = path.join(__dirname, 'assets/pictures');
 
-
-
+app.use(express.static(dir))
 app.use("/api",router)
 
-// db.Product.create({
-//     name:"test1",
-//     active:true,
-//     price:60000,
-//     description:"test"
+//  db.User.create({
+//     "username":"vunguyen",
+//     "password":"123456",
+//     "name":"Nguyen Van Vu",
+//     "email":"hoangtunvv@gmail.com",
+//     "phone":"84389814400",
+//     "active":true
 // },(err,data)=>{
-//     if(err) console.log(err)
-//     else{
+//      if(err) console.log(err)
+//      else{
 
-//         console.log(data)
-//     }
-// })
+//          console.log(data)
+//      }
+//  })
 
 
 //--------------------------

@@ -1,0 +1,48 @@
+[{
+    "name":"Bàn ăn WOA",
+    "active":true,
+    "price":500000,
+    "type":"",
+    "description":"good",
+    "info":{
+        "height":200,
+        "length":120,
+        "width":100,
+        "madeIn":"VietNam",
+        "color":"Xám"
+    },
+    "thumbnail":"/500-ban-an-go-soi-86667.jpg",
+    "picture":""
+},
+{
+    "name":"Ghế ăn không tay CHAMCHA",
+    "active":true,
+    "price":500000,
+    "type":"",
+    "description":"good",
+    "info":{
+        "height":200,
+        "length":120,
+        "width":100,
+        "madeIn":"VietNam",
+        "color":"Vàng"
+    },
+    "thumbnail":"/500-ghe-an-chamcha.jpg",
+    "picture":""
+},
+{
+    "name":"Bàn nước tròn MAXINE",
+    "active":true,
+    "price":500000,
+    "type":"",
+    "description":"good",
+    "info":{
+        "height":200,
+        "length":120,
+        "width":100,
+        "madeIn":"VietNam",
+        "color":"Vàng"
+    },
+    "thumbnail":"/1000-san-pham-nha-xinh.jpg",
+    "picture":""
+}]
