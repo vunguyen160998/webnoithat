@@ -12,7 +12,8 @@ mongoose.connect("mongodb+srv://admin:123qwert@dbnoithat-4t9fp.mongodb.net/test?
 init.initGlobal({
     db:require("./app/model"),
     _:require("lodash"),
-    async:require("async")
+    async:require("async"),
+    logger:require("log4js").getLogger()
 }).then(()=>{
     console.log("set varible global success")
 })
