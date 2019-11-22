@@ -18,13 +18,17 @@ morgan("dev")
 )
 
 /**
- *  CUSTOM API
+ *  PUBLIC API
  */
+router.post("/register",controllers.user.register)
+
 router.get("/product/list",controllers.product.getAllProduct)
 router.get("/order/:id/detail",controllers.order.detail)
+router.post("/login",controllers.user.login)
 /**
- *  GENERIC API
+ *  PRIVATE API
  **/ 
+router.use(middleware.authenticate)
 router.all("/:list/*",middleware.checkList)
  
 router.get("/:list/get",controllers.generic.get)

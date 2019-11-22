@@ -2,18 +2,14 @@ let mongoose=require('mongoose');
 let Schema=mongoose.Schema;
 
 var UserSchema=new Schema({
-    username:String,
-    password:String,
     name:String,
+    password:String,
     email:String,
     phone:String,
-    timeRegister:Date,
+    isAdmin:Boolean,
     active:Boolean
 })
-UserSchema.methods.test=function(name){
-    console.log("ok")
-    return true;
-}
+
 UserSchema.pre('save',(next)=>{
     next();
 })
