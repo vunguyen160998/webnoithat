@@ -7,7 +7,10 @@ var UserSchema=new Schema({
     email:String,
     phone:String,
     isAdmin:Boolean,
-    active:Boolean
+    avatar:String,
+    external:{type:Boolean,default:false},//true: user login by facebook or google
+    provider:String,//["facebook","google"]
+    externalId:String// id facebook || id google
 })
 
 UserSchema.pre('save',(next)=>{

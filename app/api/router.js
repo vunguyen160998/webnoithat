@@ -20,14 +20,16 @@ morgan("dev")
 /**
  *  PUBLIC API
  */
-router.post("/register",controllers.user.register)
+router.post("/register",controllers.authen.register)
 
 router.get("/product/list",controllers.product.getAllProduct)
-router.get("/order/:id/detail",controllers.order.detail)
-router.post("/login",controllers.user.login)
+
+router.post("/login",controllers.authen.login)
+router.post("/login/external",controllers.authen.loginExternal)
 /**
  *  PRIVATE API
  **/ 
+router.get("/order/:id/detail",controllers.order.detail)
 router.use(middleware.authenticate)
 router.all("/:list/*",middleware.checkList)
  
