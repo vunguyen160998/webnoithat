@@ -1,5 +1,5 @@
 function standardList(list){
-    let temp=list.replace(" ","").toLowerCase()
+    let temp=list.replace(" ","")
     result=temp[0].toUpperCase() + temp.slice(1);
     return result
 }

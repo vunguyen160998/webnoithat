@@ -13,7 +13,8 @@ init.initGlobal({
     db:require("./app/model"),
     _:require("lodash"),
     async:require("async"),
-    logger:require("log4js").getLogger()
+    logger:require("log4js").getLogger(),
+    moment:require("moment")
 }).then(()=>{
     console.log("set varible global success")
 })
@@ -24,14 +25,13 @@ var dir = path.join(__dirname, 'assets/pictures');
 app.use(express.static(dir))
 app.use("/api",router)
 
-//  db.User.create({
-//     "username":"trongtran",
-//     "password":"123456",
-//     "name":"Tran Ngoc Trong",
-//     "email":"trong.tn178@gmail.com",
-//     "phone":"84389814400",
-//     "active":true
-// },(err,data)=>{
+//  db.OrderItem.create({
+//     order:"5dd9f7ae652edd4b0088187a",
+//     product:"5dd0c0f16a2c6e37d4727507",
+//     amount:3,
+//     price:1000
+// }
+// ,(err,data)=>{
 //      if(err) console.log(err)
 //      else{
 

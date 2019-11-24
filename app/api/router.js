@@ -26,11 +26,20 @@ router.get("/product/list",controllers.product.getAllProduct)
 
 router.post("/login",controllers.authen.login)
 router.post("/login/external",controllers.authen.loginExternal)
+
+
 /**
  *  PRIVATE API
  **/ 
-router.get("/order/:id/detail",controllers.order.detail)
+
 router.use(middleware.authenticate)
+
+router.get("/order/user/:user/get",controllers.order.getByUser)
+
+router.get("/order/list",controllers.order.getAllOrder)
+
+router.get("/order/:id/detail",controllers.order.detail)
+
 router.all("/:list/*",middleware.checkList)
  
 router.get("/:list/get",controllers.generic.get)

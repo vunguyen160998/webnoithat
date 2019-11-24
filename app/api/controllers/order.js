@@ -29,16 +29,22 @@ exports.getAllOrder=async function(req,res){
 }
 
 exports.detail=async function(req,res){
-    let id= req.params.order
+    let id= req.params.id
     let order=await db.Order.findOne({
         _id:id
     })
+    .populate({
+        path:"user",
+        select:"name email phone isAdmin avatar"
+    })
     .lean()
     .exec()
+
     try{
         let items=await db.OrderItem.find({
             order:order._id
         })
+        .populate("product")
         .lean()
         .exec()
         let result={
@@ -46,6 +52,48 @@ exports.detail=async function(req,res){
             items:items
         }
         res.success(result)
+    }
+    catch(err){
+        res.error(err)
+    }
+}
+
+exports.getByUser=async function(req,res){
+    let id= req.params.user
+    let orders=await db.Order.find({
+        user:id
+    })
+    .populate({
+        path:"user",
+        select:"name email phone isAdmin avatar"
+    })
+    .lean()
+    .exec()
+    try{
+        let result=[]
+        async.forEach(orders,(order,cb)=>{
+            let items=db.OrderItem.find({
+                order:{
+                    $in:order._id
+                }
+            })
+            .populate("product")
+            .lean()
+            .exec(function(err,data){
+                result.push({
+                    ...order,
+                    items:data
+                })
+                cb()
+            })
+           
+           
+        },(err)=>{
+            res.success(result)
+        })
+      
+       
+       
     }
     catch(err){
         res.error(err)
