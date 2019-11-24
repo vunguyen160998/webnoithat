@@ -65,6 +65,7 @@ exports.login=function (req,res){
             let b = new Buffer(hash);
             let refresh_token = b.toString('base64');
             cb(null,{
+                _id:user._id,
                 name:user.name,
                 email:user.email,
                 phone:user.phone,
@@ -142,6 +143,7 @@ exports.loginExternal=function(req,res){
             let b = new Buffer(hash);
             let refresh_token = b.toString('base64');
             cb(null,{
+                _id:user._id,
                 name:user.name,
                 email:user.email,
                 phone:user.phone,
