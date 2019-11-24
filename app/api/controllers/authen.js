@@ -65,12 +65,14 @@ exports.login=function (req,res){
             let b = new Buffer(hash);
             let refresh_token = b.toString('base64');
             cb(null,{
-                _id:user._id,
-                name:user.name,
-                email:user.email,
-                phone:user.phone,
-                avatar:user.avatar,
-                isAdmin:user.isAdmin,
+                user:{
+                    _id:user._id,
+                    name:user.name,
+                    email:user.email,
+                    phone:user.phone,
+                    avatar:user.avatar,
+                    isAdmin:user.isAdmin
+                },
                 accessToken: token,
                 refreshToken: refresh_token
             });
@@ -143,12 +145,14 @@ exports.loginExternal=function(req,res){
             let b = new Buffer(hash);
             let refresh_token = b.toString('base64');
             cb(null,{
-                _id:user._id,
-                name:user.name,
-                email:user.email,
-                phone:user.phone,
-                avatar:user.avatar,
-                isAdmin:user.isAdmin,
+                user:{
+                    _id:user._id,
+                    name:user.name,
+                    email:user.email,
+                    phone:user.phone,
+                    avatar:user.avatar,
+                    isAdmin:user.isAdmin
+                },
                 accessToken: token, 
                 refreshToken: refresh_token});
         }],(err,data)=>{
