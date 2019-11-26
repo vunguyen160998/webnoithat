@@ -6,7 +6,8 @@ var OrderSchema=new Schema({
     createdAt:{type:Date},
     total:Number,
     note:String,
-    state:String//["pending","confirmed","transport","failure","cancelled","completed"]
+    state:String,//["pending","confirmed","transport","failure","cancelled","completed"],
+    address:String
 })
 OrderSchema.pre('save',function(next){
     let self=this;
