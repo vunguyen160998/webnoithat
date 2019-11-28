@@ -25,12 +25,7 @@ var dir = path.join(__dirname, 'assets/pictures');
 app.use(express.static(dir))
 app.use("/api",router)
 
-//  db.OrderItem.create({
-//     order:"5dd9f7ae652edd4b0088187a",
-//     product:"5dd0c0f16a2c6e37d4727507",
-//     amount:3,
-//     price:1000
-// }
+//  db.ProductType.create([]
 // ,(err,data)=>{
 //      if(err) console.log(err)
 //      else{

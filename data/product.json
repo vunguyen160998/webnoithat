@@ -1,17 +1,18 @@
 [{
-    "name":"Bàn ăn WOA",
+    "name":"Tủ quần áo gỗ đẹp chất lượng cao GHS-5916",
     "active":true,
-    "price":500000,
-    "type":"",
-    "description":"good",
+    "price":8600000,
+    "description":"Bạn sẽ chẳng thể nào làm ngơ được trước mẫu tủ quần áo gỗ đẹp chất lượng cao GHS-5916 của Go Home dành cho các bé. Đâu chỉ có vẻ ngoài hiện đại, đẹp mắt, các mẫu tủ quần áo gỗ sồi tự nhiên còn có kết cấu chắc chắn và đảm bảo đọ an toàn với người sử dụng. Bạn có thể yêu cầu thay đổi màu sắc cho sản phẩm khi đến chọn mua tại cửa hàng.",
     "info":{
+        "material":"Gỗ sồi tự nhiên",
         "height":200,
         "length":120,
         "width":100,
         "madeIn":"VietNam",
-        "color":"Xám"
+        "color":"khách hàng tùy ý lựa chọn màu sơn tại cửa hàng"
     },
     "thumbnail":"/500-ban-an-go-soi-86667.jpg",
+    "warrenty":"12 tháng",
     "picture":""
 },
 {
