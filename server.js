@@ -14,29 +14,33 @@ init.initGlobal({
     _:require("lodash"),
     async:require("async"),
     logger:require("log4js").getLogger(),
-    moment:require("moment")
+    moment:require("moment"),
+    services:require("./app/shared/services"),
+    lib:require("./app/shared/lib")
 }).then(()=>{
     console.log("set varible global success")
 })
 
 //-------------------------
 var dir = path.join(__dirname, 'assets/pictures');
-
+logger.level = 'debug';
 app.use(express.static(dir))
 app.use("/api",router)
 
-//  db.ProductType.create([]
-// ,(err,data)=>{
-//      if(err) console.log(err)
-//      else{
-
-//          console.log(data)
-//      }
-//  })
-
+ db.Order.findOne({
+    _id:"5de01c2ba1b37d00173a7ec2"
+ },(err,data)=>{
+     if(err) console.log(err)
+     else{
+            data.set({state:"cancelled"})
+            data.save()
+         console.log(data)
+     }
+ })
 
 //--------------------------
 
 app.listen(PORT,()=>{
     console.log(`app is running on ${PORT} ...`)
 })
+
