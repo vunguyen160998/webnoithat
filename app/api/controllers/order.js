@@ -16,6 +16,9 @@ exports.getAllOrder=async function(req,res){
     }
     // search all product
     db.Order.find({})
+    .populate({
+        path:"user"
+    })
     .skip(skip)
     .limit(limit)
     .lean()
