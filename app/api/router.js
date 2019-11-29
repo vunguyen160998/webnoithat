@@ -32,7 +32,7 @@ router.post("/login/external",controllers.authen.loginExternal)
  *  PRIVATE API
  **/ 
 
-//router.use(middleware.authenticate)
+router.use(middleware.authenticate)
 
 router.get("/order/user/:user/get",controllers.order.getByUser)
 

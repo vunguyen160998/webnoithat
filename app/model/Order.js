@@ -50,8 +50,7 @@ OrderSchema
                         items:items,
                         description:DESCRIPTION[self.state]
                     }
-                    console.log(data)
-                    services.notification.email("16110528@student.hcmute.edu.vn","email-customer-update-status-order",data,(err,result)=>{
+                    services.notification.email(self.user.email,"email-customer-update-status-order",data,(err,result)=>{
                         if(err) logger.error(err)
                         else{
                             logger.debug(result)

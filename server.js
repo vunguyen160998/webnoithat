@@ -27,16 +27,16 @@ logger.level = 'debug';
 app.use(express.static(dir))
 app.use("/api",router)
 
- db.Order.findOne({
-    _id:"5de01c2ba1b37d00173a7ec2"
- },(err,data)=>{
-     if(err) console.log(err)
-     else{
-            data.set({state:"cancelled"})
-            data.save()
-         console.log(data)
-     }
- })
+//  db.Order.findOne({
+//     _id:"5de01c2ba1b37d00173a7ec2"
+//  },(err,data)=>{
+//      if(err) console.log(err)
+//      else{
+//             data.set({state:"cancelled"})
+//             data.save()
+//          console.log(data)
+//      }
+//  })
 
 //--------------------------
 

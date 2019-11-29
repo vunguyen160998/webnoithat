@@ -11,39 +11,127 @@
         "madeIn":"VietNam",
         "color":"khách hàng tùy ý lựa chọn màu sơn tại cửa hàng"
     },
-    "thumbnail":"/500-ban-an-go-soi-86667.jpg",
+    "thumbnail":"/tu-quan-ao-1.png",
     "warrenty":"12 tháng",
-    "picture":""
+    "images":["/tu-quan-ao-1.1.png","/tu-quan-ao-1.2.png","/tu-quan-ao-1.3.png"]
 },
 {
-    "name":"Ghế ăn không tay CHAMCHA",
+    "name":"Tủ quần áo gia đình gỗ công nghiệp GHS-5912",
     "active":true,
-    "price":500000,
-    "type":"",
-    "description":"good",
+    "price":18000000,
+    "description":"Khi bạn đang có nhu cầu tìm mua những mẫu sản phẩm nội thất chất lượng với mức giá thành phải chăng thì tủ quần áo gia đình gỗ công nghiệp GHS-5912 của Go Home là một lựa chọn tuyệt vời. Chỉ với một mẫu tủ quần áo gia đình này thôi bạn đã có được một không gian lưu trữ rộng rãi, thoải mái cho nhiều mục đích sử dụng khác nhau rồi.",
     "info":{
-        "height":200,
-        "length":120,
-        "width":100,
+        "material":"Gỗ MDF lõi xanh chống ẩm phủ Melamine vân gỗ",
+        "height":2300,
+        "length":600,
+        "width":2600,
         "madeIn":"VietNam",
-        "color":"Vàng"
+        "color":"khách hàng tùy ý lựa chọn màu sơn tại cửa hàng"
     },
-    "thumbnail":"/500-ghe-an-chamcha.jpg",
-    "picture":""
+    "thumbnail":"/tu-quan-ao-2.png",
+    "warrenty":"12 tháng",
+    "images":["/tu-quan-ao-2.png","/tu-quan-ao-2.1.png","/tu-quan-ao-2.2.png","/tu-quan-ao-2.3.png"]
 },
 {
-    "name":"Bàn nước tròn MAXINE",
-    "active":true,
-    "price":500000,
-    "type":"",
-    "description":"good",
-    "info":{
-        "height":200,
-        "length":120,
-        "width":100,
-        "madeIn":"VietNam",
-        "color":"Vàng"
+        "name":"Ghế sofa thiết kế đẹp hiện đại khung gỗ tự nhiên GHS-8333",
+        "active":true,
+        "price":8500000,
+        "description":"Ghế sofa thiết kế đẹp hiện đại khung gỗ tự nhiên GHS-8333 với kiểu dáng sang trọng hiện đại, dễ kết hợp trong nhiều không gian gia đình. Với khung gỗ tự nhiên cùng hệ thống lò xo, mút xốp độ bền cao, ghế sofa thiết kế đẹp chắc chắn sẽ khiến bạn hài lòng.",
+        "info":{
+            "material":"khung gỗ tự nhiên 100%, lò xo lưới, mút xốp K35 và vải nỉ bọc cao cấp",
+            "height":820,
+            "length":600,
+            "width":640,
+            "madeIn":"VietNam",
+            "color":"khách hàng tùy ý lựa chọn màu sơn tại cửa hàng"
+        },
+        "thumbnail":"/ghe-1.png",
+        "warrenty":"12 tháng",
+        "images":["/ghe-1.2.png","/ghe-1.3.png","/ghe-1.1.png"]
     },
-    "thumbnail":"/1000-san-pham-nha-xinh.jpg",
-    "picture":""
-}]
+    {
+        "name":"Ghế sofa gỗ phòng khách sang trọng hiện đại GHS-8328",
+        "active":true,
+        "price":4500000,
+        "description":"Ghế sofa gỗ phòng khách sang trọng hiện đại GHS-8328 đảm bảo đáp ứng cả về độ bền, tính thẩm mỹ. Sản phẩm có ghế đơn và ghế 2 chỗ cho bạn bài trí trong không gian phòng khách. Cùng tìm hiểu kỹ hơn về chất liệu, màu sắc cũng như kiểu dáng của mẫu ghế sofa gỗ phòng khách đang được ưa chuộng này nhé!        .",
+        "info":{
+            "material":"khung gỗ tự nhiên 100%, lò xo lưới, mút xốp K35 và vải nỉ bọc cao cấp",
+            "height":700,
+            "length":700,
+            "width":1300,
+            "madeIn":"VietNam",
+            "color":"khách hàng tùy ý lựa chọn màu sơn tại cửa hàng"
+        },
+        "thumbnail":"/ghe-2.png",
+        "warrenty":"12 tháng",
+        "images":["/ghe-2.1.png","/ghe-2.2.png","/ghe-2.3.png"]
+    },
+    {
+        "name":"Bàn làm việc kết hợp giá sách nhỏ gọn tiện lợi GHS-4886",
+        "active":true,
+        "price":4500000,
+        "description":"Bàn làm việc kết hợp giá sách nhỏ gọn tiện lợi GHS-4886 dễ bài trí trong phòng làm việc. Với thiết kế có kệ nhỏ đi kèm giúp bạn dễ dàng để sách vở, đồ dùng nhỏ rất tiện dụng. Cùng chiêm ngưỡng thiết kế hiện đại của mẫu bàn làm việc kết hợp giá sách này nhé!",
+        "info":{
+            "material":"gỗ công nghiệp MDF phủ Melamine màu kết hợp vân gỗ tự nhiên",
+            "height":1200,
+            "length":600,
+            "width":1350,
+            "madeIn":"VietNam",
+            "color":"khách hàng tùy ý lựa chọn màu sơn tại cửa hàng"
+        },
+        "thumbnail":"/ban-1.png",
+        "warrenty":"12 tháng",
+        "images":["/ban-1.1.png","/ban-1.2.png","/ban-1.3.png","/ban-1.4.png"]
+    },
+    {
+        "name":"Bàn làm việc hiện đại bằng gỗ sồi tự nhiên GHS-4879",
+        "active":true,
+        "price":7500000,
+        "description":"Bàn làm việc hiện đại bằng gỗ sồi tự nhiên GHS-4879 với thiết kế 2 tủ để đồ tiện dụng, giúp bạn có thêm không gian bài trí, sắp xếp. Chất liệu gỗ sồi tự nhiên có độ cứng cao, vân gỗ tự nhiên đẹp mắt, tạo điểm nhấn sang trọng và tinh tế. Cùng chiêm ngưỡng vẻ đẹp của mẫu bàn làm việc hiện đại đang dẫn đầu xu hướng thiết kế này nhé! ",
+        "info":{
+            "material":"khung gỗ tự nhiên 100%, lò xo lưới, mút xốp K35 và vải nỉ bọc cao cấp",
+            "height":1400,
+            "length":580,
+            "width":740,
+            "madeIn":"VietNam",
+            "color":"khách hàng tùy ý lựa chọn màu sơn tại cửa hàng"
+        },
+        "thumbnail":"/ban-2.png",
+        "warrenty":"12 tháng",
+        "images":["/ban-2.1.png","/ban-2.2.png","/ban-2.3.png","/ban-2.4.png"]
+    },
+    {
+        "name":"Bàn làm việc hiện đại bằng gỗ sồi tự nhiên GHS-4879",
+        "active":true,
+        "price":7500000,
+        "description":"Bàn làm việc hiện đại bằng gỗ sồi tự nhiên GHS-4879 với thiết kế 2 tủ để đồ tiện dụng, giúp bạn có thêm không gian bài trí, sắp xếp. Chất liệu gỗ sồi tự nhiên có độ cứng cao, vân gỗ tự nhiên đẹp mắt, tạo điểm nhấn sang trọng và tinh tế. Cùng chiêm ngưỡng vẻ đẹp của mẫu bàn làm việc hiện đại đang dẫn đầu xu hướng thiết kế này nhé! ",
+        "info":{
+            "material":"khung gỗ tự nhiên 100%, lò xo lưới, mút xốp K35 và vải nỉ bọc cao cấp",
+            "height":1400,
+            "length":580,
+            "width":740,
+            "madeIn":"VietNam",
+            "color":"khách hàng tùy ý lựa chọn màu sơn tại cửa hàng"
+        },
+        "thumbnail":"/ban-2.png",
+        "warrenty":"12 tháng",
+        "images":["/ban-2.1.png","/ban-2.2.png","/ban-2.3.png","/ban-2.4.png"]
+    },
+    {
+        "name":"Bàn làm việc hiện đại bằng gỗ sồi tự nhiên GHS-4879",
+        "active":true,
+        "price":7500000,
+        "description":"Bàn làm việc hiện đại bằng gỗ sồi tự nhiên GHS-4879 với thiết kế 2 tủ để đồ tiện dụng, giúp bạn có thêm không gian bài trí, sắp xếp. Chất liệu gỗ sồi tự nhiên có độ cứng cao, vân gỗ tự nhiên đẹp mắt, tạo điểm nhấn sang trọng và tinh tế. Cùng chiêm ngưỡng vẻ đẹp của mẫu bàn làm việc hiện đại đang dẫn đầu xu hướng thiết kế này nhé! ",
+        "info":{
+            "material":"khung gỗ tự nhiên 100%, lò xo lưới, mút xốp K35 và vải nỉ bọc cao cấp",
+            "height":1400,
+            "length":580,
+            "width":740,
+            "madeIn":"VietNam",
+            "color":"khách hàng tùy ý lựa chọn màu sơn tại cửa hàng"
+        },
+        "thumbnail":"/ban-2.png",
+        "warrenty":"12 tháng",
+        "images":["/ban-2.1.png","/ban-2.2.png","/ban-2.3.png","/ban-2.4.png"]
+    }
+]
