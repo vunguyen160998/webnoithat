@@ -70,3 +70,18 @@ exports.getProductByType=function(req,res){
         }
     })
 }
+/**
+ *  GET: /api/product/type/get
+ *  
+ */
+exports.getType=function(req,res){
+    db.ProductType
+    .find()
+    .lean() 
+    .exec((err,data)=>{
+        if(err) res.error(err)
+        else{
+            res.success(data)
+        }
+    })
+}

@@ -8,10 +8,16 @@ module.exports = function(req, res, next) {
         return next();
         }
         catch(err){
-            res.error(new Error("token is invalid"))
+            res.error({
+                code:400,
+                status:"token is invalid"
+            })
         }  
     } else {
-       res.error(new Error("not authorization"));
+       res.error({
+            code:401,
+            status:"not authorization"
+        });
     }
 
 }
