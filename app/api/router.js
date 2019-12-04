@@ -23,6 +23,7 @@ morgan("dev")
 router.post("/register",controllers.authen.register)
 
 router.get("/product/list",controllers.product.getAllProduct)
+router.get("/product/type/:slug/get",controllers.product.getProductByType)
 
 router.post("/login",controllers.authen.login)
 router.post("/login/external",controllers.authen.loginExternal)

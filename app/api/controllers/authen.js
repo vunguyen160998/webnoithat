@@ -1,6 +1,7 @@
 let crypto=require("crypto")
 let jwt=require("jsonwebtoken")
 let privateKey="furniture"
+let expiresIn='30s'
 exports.register=async function(req,res){
     logger.info("[API] - REGISTER")
     let salt = crypto.randomBytes(16).toString('base64');
@@ -61,7 +62,7 @@ exports.login=function (req,res){
             let salt = crypto.randomBytes(16).toString('base64');
             let hash = crypto.createHmac('sha512', salt).update(refreshId).digest("base64");
             req.body.refreshKey = salt;
-            let token = jwt.sign(req.body, privateKey);
+            let token = jwt.sign(req.body, privateKey,{expiresIn: expiresIn});
             let b = new Buffer(hash);
             let refresh_token = b.toString('base64');
             cb(null,{

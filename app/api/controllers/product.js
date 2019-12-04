@@ -42,3 +42,31 @@ exports.getAllProduct=async function(req,res){
         }
     })
 }
+/**
+ *  api: /product/type/:slug/get
+ *      
+ *  */
+exports.getProductByType=function(req,res){
+    let slug=req.params.slug
+    db.ProductType
+    .findOne({
+        slug:slug
+    })
+    .lean()
+    .exec((err,type)=>{
+        if(err || !type) res.error(err || new Error("404 productType not found"))
+        else{
+            db.Product
+            .find({
+                type:type._id
+            })
+            .lean()
+            .exec((err,data)=>{
+                if(err ) res.error(err)
+                else{
+                    res.success(data)
+                }
+            })
+        }
+    })
+}

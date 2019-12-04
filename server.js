@@ -24,17 +24,21 @@ init.initGlobal({
 //-------------------------
 var dir = path.join(__dirname, 'assets/pictures');
 logger.level = 'debug';
+console.log(dir)
 app.use(express.static(dir))
 app.use("/api",router)
 
-//  db.Order.findOne({
-//     _id:"5de01c2ba1b37d00173a7ec2"
-//  },(err,data)=>{
+//  db.Product.findOne({
+//     type:"5ddf7bed88746e09cc548ae9"
+//  })
+//  .populate({
+//      path:"type"
+//  })
+//  .exec((err,newData)=>{
 //      if(err) console.log(err)
 //      else{
-//             data.set({state:"cancelled"})
-//             data.save()
-//          console.log(data)
+      
+//          console.log(newData)
 //      }
 //  })
 
