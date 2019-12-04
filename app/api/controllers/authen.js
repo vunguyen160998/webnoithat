@@ -1,7 +1,7 @@
 let crypto=require("crypto")
 let jwt=require("jsonwebtoken")
 let privateKey="furniture"
-let expiresIn='30s'
+let expiresIn='300s'
 exports.register=async function(req,res){
     logger.info("[API] - REGISTER")
     let salt = crypto.randomBytes(16).toString('base64');
