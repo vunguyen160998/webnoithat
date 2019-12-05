@@ -3,7 +3,9 @@ let Schema=mongoose.Schema;
 const DESCRIPTION={
     "confirmed":"Đã được xác nhận",
     "cancelled":"Đã bị hủy",
-    "transport":"Đang vận chuyển"
+    "transport":"Đang vận chuyển",
+    "failure":"Thất bại",
+    "completed":"Thành công"
 }
 var OrderSchema=new Schema({
     user:{type:Schema.Types.ObjectId,ref:'User'},
@@ -41,7 +43,7 @@ OrderSchema
    
 
     if(self.isModified("state")){
-        if(self.state=="confirmed" || self.state=="transport" || self.state=="cancelled"){
+        if(self.state!="pendding"){
             lib.order.getOrderItem(self._id,(err,items)=>{
                 if(err) logger.error(err)
                 else{
